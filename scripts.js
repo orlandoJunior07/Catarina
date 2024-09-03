@@ -16,7 +16,6 @@ function adicionarNovaTarefa() {
 function mostrarTarefas() {
  let novaLI = ''
 
-    // `['comprar café', 'estudar progamação']
 
     minhaListadeitens.forEach((item, index) => {
     novaLI = novaLI + `
