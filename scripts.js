@@ -1,7 +1,13 @@
 const button = document.querySelector('.button-add-task')
 const input = document.querySelector('.input-task')
 const listacompleta = document.querySelector('.list-task')
+document.addEventListener("keypress", function(e) {
 
+    if(e.key === "Enter") {
+        const btn = document.querySelector('.button-add-task')
+        btn.click()
+    }
+})
 let minhaListadeitens = []
 
 function adicionarNovaTarefa() {
@@ -57,4 +63,5 @@ function recarregarTarefas(){
     mostrarTarefas()
 }
 recarregarTarefas()
+
 button.addEventListener('click', adicionarNovaTarefa)
